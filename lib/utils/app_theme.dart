@@ -1,4 +1,3 @@
-
 import 'config_packages.dart';
 
 class AppTheme {
@@ -11,12 +10,12 @@ class AppTheme {
       dividerColor: AppColors.deviderColor,
       textTheme: TextTheme(
           headlineLarge: getTextStyle(AppColors.primaryColor, FontDimen.dimen20,
-              fontWeight: FontWeight.w700),
+              fontWeight: FontWeight.bold),
           headlineMedium: getTextStyle(
-              AppColors.primaryColor, FontDimen.dimen16,
-              fontWeight: FontWeight.w700),
-          headlineSmall: getTextStyle(AppColors.primaryColor, FontDimen.dimen14,
-              fontWeight: FontWeight.w700),
+              AppColors.primaryColor, FontDimen.dimen18,
+              fontWeight: FontWeight.bold),
+          headlineSmall: getTextStyle(AppColors.primaryColor, FontDimen.dimen16,
+              fontWeight: FontWeight.bold),
           bodyLarge: getTextStyle(AppColors.greyColor, FontDimen.dimen16,
               fontWeight: FontWeight.w500),
           bodyMedium: getTextStyle(AppColors.greyColor, FontDimen.dimen14,
@@ -25,13 +24,14 @@ class AppTheme {
               fontWeight: FontWeight.w500),
           labelLarge: getTextStyle(AppColors.lableColor, FontDimen.dimen16,
               fontWeight: FontWeight.w500),
-          labelMedium: getTextStyle(AppColors.lableColor, FontDimen.dimen14, fontWeight: FontWeight.w500),
-          labelSmall: getTextStyle(AppColors.lableColor, FontDimen.dimen12, fontWeight: FontWeight.w500),
+          labelMedium: getTextStyle(AppColors.lableColor, FontDimen.dimen14,
+              fontWeight: FontWeight.w500),
+          labelSmall: getTextStyle(AppColors.lableColor, FontDimen.dimen12,
+              fontWeight: FontWeight.w500),
           // titleLarge: getTextStyle(AppColors.greyColor, FontDimen.dimen18, fontWeight: FontWeight.w500),
-          // titleMedium: getTextStyle(AppColors.secondaryColor, FontDimen.dimen16, fontWeight: FontWeight.w500),
-          titleSmall: getTextStyle(AppColors.greyColor, FontDimen.dimen12, fontWeight: FontWeight.w400)));
-
-  
+          titleMedium: getTextStyle(AppColors.secondaryColor, FontDimen.dimen12, fontWeight: FontWeight.w500),
+          titleSmall: getTextStyle(AppColors.greyColor, FontDimen.dimen12,
+              fontWeight: FontWeight.w500)));
 }
 
 TextStyle getTextStyle(Color color, double size, {FontWeight? fontWeight}) =>
