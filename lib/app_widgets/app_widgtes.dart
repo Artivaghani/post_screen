@@ -93,7 +93,7 @@ class AppWidgets {
                 )
               : ButtonView(
                   title: AppString.follow,
-                  width: AppDimen.dimen80,
+                  width: AppDimen.dimen90,
                   height: AppDimen.dimen35,
                 )
         ],

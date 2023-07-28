@@ -23,9 +23,6 @@ class PostScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
-                          height: AppDimen.dimen10,
-                        ),
                         AppWidgets.getProfileView('안녕 나 응애', AppImages.profile),
                         SizedBox(
                           height: AppDimen.dimen20,
@@ -57,7 +54,7 @@ class PostScreen extends StatelessWidget {
                     CommentView().paddingSymmetric(
                         horizontal: AppDimen.dimen20,
                         vertical: AppDimen.dimen16)
-                  ]).paddingSymmetric(vertical: AppDimen.dimen14),
+                  ]).paddingSymmetric(vertical: AppDimen.dimen10),
                 ),
                 bottomViewBar()
               ],
@@ -113,7 +110,7 @@ class PostScreen extends StatelessWidget {
         visualDensity: const VisualDensity(horizontal: -4, vertical: -3),
         side: BorderSide(
             width: 0.01, color: AppColors.lableColor.withOpacity(0.5)),
-      ).paddingOnly(right: AppDimen.dimen8,top: 2));
+      ).paddingOnly(right: AppDimen.dimen8, top: 2));
     }
     return tagList;
   }
